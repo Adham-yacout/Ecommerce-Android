@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.LoginScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:id="@+id/Header"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mainslogan"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="34sp"
+            android:fontFamily="@font/customfont2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please login in to continue to our app"
+            android:textSize="16sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Header"
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="16dp"
+    android:id="@+id/emaillayout"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/Emaillogo"
+        />
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/Emailentered"
+
+        />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emaillayout"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/passwordlayout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/passlogo"
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+android:inputType="textPassword"
+            android:id="@+id/passwordentered"
+/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            android:clickable="true"
+            android:id="@+id/eyebtn"/>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlayout"
+        android:layout_marginTop="48dp"
+        android:id="@+id/buttonsgp1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/filledbutton"
+                android:backgroundTint="@color/black"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:id="@+id/Loginbtn"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="OR"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/filledbutton"
+                android:backgroundTint="@color/facebook"
+                android:drawableStart="@drawable/facebookicon"
+                android:paddingStart="8dp"
+                android:text="@string/continue_with_facebook"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonsgp1"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/filledbutton"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/googleicon"
+                android:paddingStart="8dp"
+                android:text="@string/continue_with_google"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginBottom="16dp"
+
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/filledbutton"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/appleicon"
+                android:paddingStart="8dp"
+                android:text="@string/continue_with_apple"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginBottom="32dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

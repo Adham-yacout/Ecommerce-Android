@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.UserProfile">
+
+    <ImageView
+        android:id="@+id/Backbtn"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/back" />
+    <ImageView
+        android:id="@+id/signout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_exit_to_app_24" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/Backbtn"
+        android:backgroundTint="@color/Cardcolor"
+        app:cardCornerRadius="20dp"
+android:id="@+id/usercard"
+        android:layout_margin="24dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/UserPicture"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/tempuser" />
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/UserPicture"
+                android:textColor="@color/black"
+                tools:text="My Name" />
+
+            <TextView
+                android:id="@+id/Useremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserName"
+                android:layout_marginStart="16dp"
+android:textSize="16sp"
+
+
+                android:layout_toEndOf="@id/UserPicture"
+                android:textColor="@color/black"
+                tools:text="Email@gmail.com" />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/usercard"
+        android:layout_marginStart="24dp"
+        app:cardCornerRadius="24dp"
+android:id="@+id/card2"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/Cardcolor"
+        android:id="@+id/Personnaldetails"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:text="Personal Details"
+        android:padding="8dp"
+        android:textColor="@color/black"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:id="@+id/Myordergoto"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/Cardcolor"
+        android:drawableLeft="@drawable/ic_baseline_shopping_bag_24_black"
+        android:padding="8dp"
+        android:text="My order"
+
+        android:textColor="@color/black"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:id="@+id/gotofav"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/Cardcolor"
+        android:drawableLeft="@drawable/ic_baseline_favorite_24"
+        android:text="Favourites"
+        android:padding="8dp"
+        android:textColor="@color/black"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/Cardcolor"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:padding="8dp"
+        android:id="@+id/gotoshipping"
+        android:text="Shipping Details"
+
+        android:textColor="@color/black"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/Cardcolor"
+        android:drawableLeft="@drawable/ic_baseline_credit_card_24"
+        android:padding="8dp"
+        android:text="My Card"
+android:id="@+id/Carddetails"
+        android:textColor="@color/black"
+
+        />
+
+
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+           app:cardCornerRadius="24dp"
+
+
+            android:layout_margin="24dp"
+
+            android:backgroundTint="@color/Cardcolor">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/filledbutton"
+                android:backgroundTint="@color/Cardcolor"
+                android:drawableLeft="@drawable/ic_baseline_connect_without_contact_24"
+                android:padding="8dp"
+                android:text="Contact Us"
+                android:id="@+id/contactus"
+                android:textColor="@color/black"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

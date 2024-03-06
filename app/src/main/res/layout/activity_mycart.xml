@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.Mycart">
+    <ImageView
+        android:id="@+id/Backbtncart"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Backbtncart"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+
+        android:text="My Cart"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textly"
+    android:layout_above="@id/totalpricecart"
+    android:orientation="vertical"
+    android:id="@+id/reccy"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/cartrecycle"
+        android:layout_below="@id/textly"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+android:layout_toStartOf="@id/totalpricecart"
+        android:layout_above="@id/proceedcheckout"
+        android:text="Total Price:"
+
+        android:layout_marginStart="24dp"
+    android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:id="@+id/textalig"/>
+
+
+
+    <TextView
+        android:id="@+id/totalpricecart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_alignParentEnd="true"
+        android:layout_above="@id/proceedcheckout"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+
+        android:text="price"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/filledbutton"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Proceed to Checkout"
+        android:id="@+id/proceedcheckout"
+        android:padding="8dp"
+        android:drawableEnd="@drawable/ic_baseline_next_plan_24"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

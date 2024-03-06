@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.Payment">
+
+    <ImageView
+        android:id="@+id/Backbtn"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:src="@drawable/back" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Backbtn"
+        android:layout_margin="20dp"
+        android:text="Payment"
+        android:textSize="20sp"
+        android:id="@+id/payid"
+        android:textColor="@color/black"
+        />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/credit"
+            android:id="@+id/creditpic"
+            android:layout_below="@id/payid"
+/>
+
+    <EditText
+        android:id="@+id/Cardnumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/creditpic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Card number"
+
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/Cardexpire"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Cardnumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Exp date"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/Cvv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Cardexpire"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Cvv"
+        android:padding="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/Cardcolor"
+        android:text="Cancel"
+        android:id="@+id/Cancelbtn"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/filledbutton"
+        android:backgroundTint="@color/black"
+        android:text="Confirm"
+        android:id="@+id/confirmbutton"
+        android:textColor="@color/white" />
+</RelativeLayout>

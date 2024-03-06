@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="16dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardCornerRadius="50dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@null"
+        android:background="@null"
+        android:id="@+id/cardlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:id="@+id/orderindex"
+               android:text="Order Index"
+               android:textStyle="bold"
+               android:textSize="30sp"
+               android:textColor="@color/black"
+               />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(7 days remaining)"
+        android:id="@+id/carttitle"
+        android:layout_below="@id/cardlay"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"
+        android:textSize="16dp"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        Tools:text="price"
+        android:layout_below="@id/cardlay"
+        android:id="@+id/cartitemprice"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/cartitemnames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carttitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        Tools:text="names"
+
+        />
+</RelativeLayout>

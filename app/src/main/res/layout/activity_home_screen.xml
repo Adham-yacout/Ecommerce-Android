@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".main.ui.HomeScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:id="@+id/Header"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_menu_open_24"
+                android:clickable="true"
+                android:id="@+id/Mainmenu"
+                android:layout_marginTop="8dp"
+
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:src="@drawable/tempuser"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/userdetailsgoto"
+                android:clickable="true"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_below="@id/Header"
+    android:layout_margin="16dp"
+    android:id="@+id/center"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="@string/welcome_to_alnilam"
+        android:textSize="26dp"
+        android:fontFamily="@font/customfont2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/text"
+
+        />
+    <SearchView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/searchbar"
+        android:layout_below="@id/text"
+        android:background="@drawable/searchviewstyle"
+
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/filtter"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/text"
+        />
+
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center"
+        android:id="@+id/reyclearea1"
+        android:layout_marginStart="16dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reycle1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reyclearea1"
+        android:id="@+id/reyclearea2"
+        android:layout_marginStart="16dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_arrivals"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycle2"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/navbar"
+    app:menu="@menu/bottomnavmenu"
+    />
+ </RelativeLayout>

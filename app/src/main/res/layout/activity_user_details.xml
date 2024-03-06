@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.UserDetails">
+
+    <ImageView
+        android:id="@+id/Backbtndetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:minWidth="32dp"
+        android:minHeight="32dp"
+        android:src="@drawable/back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Backbtndetails"
+        android:id="@+id/ly1"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="25dp"
+            android:layout_margin="16dp"
+            android:id="@+id/cardlyy"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/UserImage"
+                tools:src="@drawable/categorytemp"
+                android:scaleType="fitXY"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+<RelativeLayout
+    android:id="@+id/leftly"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_below="@id/ly1"
+ android:layout_marginEnd="8dp"
+
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="16dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/light_grey"
+            android:padding="8dp"
+            >
+            <LinearLayout
+                android:id="@+id/ly2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+
+
+                    android:textColor="@color/black"
+
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/UserDetailsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="Name" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ly2"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/ly3"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+
+                    android:textSize="20sp"
+
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/UserDetailsemail"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="Name"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ly3"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/ly4"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role:"
+
+                    android:textSize="20sp"
+
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/UserDetailsRole"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="Name"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ly4"
+
+                android:id="@+id/ly5"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card:"
+
+                    android:textSize="20sp"
+
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/UserCardnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="User card number"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below= "@id/leftly"
+        android:layout_margin="16dp"
+
+
+        >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               app:cardCornerRadius="20sp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/light_grey"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping details"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+
+
+                    />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping street:"
+                            android:layout_marginEnd="24dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping street"
+                            android:id="@+id/tempshipdetail"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping City:"
+                        android:layout_marginEnd="24dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="state"
+                        android:id="@+id/tempcitydetail"
+                        android:textSize="12sp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping State:"
+                        android:layout_marginEnd="24dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:id="@+id/tempstatedetail"
+
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone number:"
+                            android:layout_marginEnd="24dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="phone number"
+                            android:id="@+id/tempphonedetail"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping Zipcode:"
+                            android:layout_marginEnd="24dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tempzipdetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="zip code"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping Country"
+                            android:layout_marginEnd="24dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="country"
+                            android:textSize="12sp"
+                            android:id="@+id/tempcountrydetail"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp"
+
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

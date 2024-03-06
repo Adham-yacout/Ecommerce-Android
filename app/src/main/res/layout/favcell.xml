@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="16dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardCornerRadius="50dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@null"
+        android:background="@null"
+        android:id="@+id/cardlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/categorytemp"
+                android:id="@+id/cartimage"
+                android:scaleType="centerCrop"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="16sp"
+                android:id="@+id/itemremove"
+                android:src="@drawable/ic_baseline_delete_24" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        Tools:text="title"
+        android:id="@+id/carttitle"
+        android:layout_below="@id/cardlay"
+        android:textStyle="bold"
+        android:layout_marginStart="40dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        Tools:text="price"
+        android:layout_below="@id/cardlay"
+        android:id="@+id/cartitemprice"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

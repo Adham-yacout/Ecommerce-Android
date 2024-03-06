@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="mainslogan">Alnilam\nMy life My Style</string>
+    <string name="welcome">Welcome!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="continue_with_facebook">Continue with facebook</string>
+    <string name="continue_with_google">Continue with GOOGLE</string>
+    <string name="continue_with_apple">Continue with APPLE</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="success_message">You have succesfully completed logining in\n to our app you can start using it</string>
+    <string name="successfull">Successfull !</string>
+    <string name="welcome_to_alnilam">Welcome,\nTo Alnilam</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="title1">20% discount \nNew arrival product</string>
+    <string name="title2">Take advantage \nof the shopping offer</string>
+    <string name="title3">All types \nwithin your reach</string>
+    <string name="title_activity_my_order">MyOrder</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

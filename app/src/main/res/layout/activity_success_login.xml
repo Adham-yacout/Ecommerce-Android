@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.SuccessLogin">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:translationY="-90dp"
+
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_circle_outline_24"
+           android:layout_gravity="center"
+
+            android:id="@+id/sucess"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8sp"
+            android:textSize="24sp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+android:textStyle="italic"
+
+
+            android:text="@string/successfull"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8sp"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            android:text="@string/success_message"
+/>
+    </LinearLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="96dp"
+    android:backgroundTint="@color/black"
+    android:background="@drawable/filledbutton"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="32dp"
+    android:text="Start Shopping"
+    android:id="@+id/startshopping"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    />
+
+</RelativeLayout>

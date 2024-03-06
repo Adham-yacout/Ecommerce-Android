@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Mainframe"
+    tools:context=".main.ui.SignUp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mainslogan"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+       android:gravity="center"
+        android:id="@+id/header_title"
+        android:textSize="34sp"
+        android:fontFamily="@font/customfont2"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Header"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+       android:layout_below="@id/header_title"
+        android:layout_marginEnd="16dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:text="@string/sign_up"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/lightblack"
+            android:text="Create a new account"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user Name"
+            android:layout_marginTop="32dp"
+
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/signUsername"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_marginTop="32dp"
+
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/signupemail"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:layout_marginTop="32dp"
+
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signuppass1"
+
+
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginTop="32dp"
+
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/signuppass2"
+
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By creating an account you have to agree to our Terms and conditions"
+            android:id="@+id/signupcheckbox"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/filledbutton"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="@string/sign_up"
+            android:layout_marginTop="8dp"
+            android:id="@+id/signupbtn"
+            android:layout_marginBottom="16dp"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

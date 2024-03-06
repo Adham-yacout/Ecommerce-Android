@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.ItemPage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:id="@+id/Header"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:minWidth="36dp"
+            android:minHeight="36dp"
+            android:src="@drawable/back"
+            android:id="@+id/backtocategory"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:minWidth="36dp"
+            android:minHeight="36dp"
+            android:id="@+id/gotocart"
+            android:src="@drawable/ic_baseline_shopping_bag_24"
+            android:background="@color/white"
+            app:tint="@color/black" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutheading"
+    android:layout_below="@id/Header"
+    android:layout_marginTop="-24dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        >
+
+        <androidx.viewpager.widget.ViewPager
+
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+android:id="@+id/addtofav"
+            android:layout_marginBottom="16dp"
+            android:minWidth="36dp"
+            android:minHeight="36dp"
+            android:src="@drawable/ic_baseline_favorite_24" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutheading"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/addlay"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewpager"
+
+           android:layout_margin="16dp"
+
+            android:layout_marginBottom="16dp"
+            tools:text="hello"
+            android:id="@+id/Itemtitle"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@color/grey"
+              android:layout_alignParentEnd="true"
+
+android:layout_marginEnd="16dp"
+               android:layout_marginTop="380dp"
+
+               >
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:layout_width="40dp"
+                   android:layout_height="match_parent"
+                   android:backgroundTint="@null"
+                   android:text="-"
+                   android:id="@+id/Minusbtn"
+
+                   android:textColor="@color/black"
+                   />
+               <TextView
+                   android:layout_width="40dp"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:text="1"
+                   android:id="@+id/ItemQuantity"
+                   android:textColor="@color/white"
+
+                   />
+               <androidx.appcompat.widget.AppCompatButton
+                   android:layout_width="40dp"
+                   android:layout_height="match_parent"
+                   android:backgroundTint="@null"
+android:id="@+id/Addbtn"
+                   android:text="+"
+                   android:textColor="@color/black"
+                   />
+
+
+           </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addlay"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:text="Size"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            tools:text="Description"
+            android:id="@+id/Itemsdescription"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="16dp"
+        android:text="Total price"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:text="990$"
+        android:id="@+id/Itemprice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:translationY="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginStart="16dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filledbutton"
+        android:layout_marginLeft="250dp"
+        android:id="@+id/Addtocart"
+        android:backgroundTint="@color/black"
+        android:text="Add to Cart"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_baseline_shopping_bag_24_white"
+android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        />
+</RelativeLayout>
